@@ -1,0 +1,35 @@
+thead tr {
+  display: flex;
+  border-bottom: $border;
+  border-top: $border;
+  th {
+    flex: 1;
+    text-align: center;
+    border-right: $border;
+  }
+  th.number {
+    flex: .5;
+  }
+}
+
+tbody tr {
+  display: flex;
+  td {
+    flex: 1;
+    border-right: $border;
+    img {
+      width: 60px;
+      padding-right: 10px;
+    }
+  }
+  td.number {
+    text-align: right;
+    flex: .5;
+  }
+}
+
+.first {
+  flex: .2;
+  text-align: center;
+  border-left: $border;
+}
