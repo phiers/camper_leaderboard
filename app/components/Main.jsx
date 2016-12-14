@@ -4,6 +4,7 @@ import React from 'react';
 import TitleBar from 'TitleBar';
 import TableMain from 'TableMain';
 import TableHeader from 'TableHeader';
+import getData from 'camperData';
 /* eslint-enable */
 
 export default class Main extends React.Component {
@@ -37,6 +38,7 @@ export default class Main extends React.Component {
 
   componentDidMount() {
     this.sortTable(this.state.sortKey);
+    getData;
   }
 
   sortTable(key) {

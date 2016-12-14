@@ -19,7 +19,7 @@ export default class TableMain extends React.Component {
       }
 
       return data.map((cellData, index) =>
-        (<TableCell key={index} {...cellData} rowNo={index + 1} />));
+        (<TableCell key={cellData.username} {...cellData} rowNo={index + 1} />));
     };
 
     return (
