@@ -6,6 +6,11 @@ thead tr {
     flex: 1;
     text-align: center;
     border-right: $border;
+    .button {
+      padding: .3rem .8rem .6rem .3rem;
+      margin-left: .5rem;
+      margin-top: 1rem;
+    }
   }
   th.number {
     flex: .5;

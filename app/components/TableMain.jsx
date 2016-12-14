@@ -8,6 +8,7 @@ import TableCell from 'TableCell';
 export default class TableMain extends React.Component {
   render() {
     const data = this.props.data;
+
     const renderTable = () => {
       if (data.length === 0) {
         return (
@@ -22,12 +23,9 @@ export default class TableMain extends React.Component {
     };
 
     return (
-      <table>
-        <TableHeader />
-        <tbody>
-          { renderTable() }
-        </tbody>
-      </table>
+      <tbody>
+        { renderTable() }
+      </tbody>
     );
   }
 }

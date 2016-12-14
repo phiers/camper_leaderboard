@@ -6,7 +6,7 @@ import React from 'react';
 
 const TableCell = (props) => {
   const { username, img, alltime, recent, rowNo } = props;
-  // console.log(this.props.data);
+
   return (
     <tr>
       <td className="first">{rowNo}</td>
