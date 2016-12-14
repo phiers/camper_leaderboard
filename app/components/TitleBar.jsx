@@ -3,7 +3,9 @@ import React from 'react';
 const TitleBar = () => (
   <div className="top-bar">
     <div className="top-bar-left">
-      <p className="menu-text">freeCodeCamp Leaderboard</p>
+      <p className="menu-text">freeCodeCamp LeaderBoard (click
+          <span className="blue"> blue columns </span>to sort)
+      </p>
     </div>
     <div className="top-bar-right">
       <p className="menu-text">View source code on

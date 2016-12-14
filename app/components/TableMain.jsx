@@ -7,13 +7,13 @@ import TableCell from 'TableCell';
 
 export default class TableMain extends React.Component {
   render() {
-    const data = this.props.data;
+    const data = this.props.data.slice(0, 100);
 
     const renderTable = () => {
       if (data.length === 0) {
         return (
           <tr>
-            <td>Loading....</td>
+            <td className="loading">Loading....</td>
           </tr>
         );
       }

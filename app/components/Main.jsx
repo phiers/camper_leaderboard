@@ -18,8 +18,8 @@ export default class Main extends React.Component {
   }
 
   componentDidMount() {
-    this.sortTable(this.state.sortKey);
     this.loadData();
+    this.sortTable(this.state.sortKey);
   }
 
   loadData() {
