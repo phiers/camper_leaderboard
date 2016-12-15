@@ -1,14 +1,21 @@
 body {
   background: $fcc-green;
-
+  font-family: 'Lato', sans-serif;
 }
 
 .top-bar {
   font-size: 1.3rem;
   background: white;
   margin-bottom: 2rem;
-  border: 5px solid $fcc-green;
   padding-top: 10px;
+
+  .top-bar-left {
+    font-size: 2.5rem;
+  }
+
+  .top-bar-right {
+    font-size: .8rem;
+  }
 
   a {
     color: blue;

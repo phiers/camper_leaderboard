@@ -1,6 +1,6 @@
 
 table {
-  width: 75%;
+  width: 100%;
   margin: auto;
   box-sizing: border-box;
 }
@@ -11,18 +11,15 @@ thead tr {
   border-top: $border;
   th {
     flex: 1;
-    font-size: 1.1rem;
+    font-size: .9rem;
     text-align: center;
     border-right: $border;
-    .button {
-      padding: .3rem .8rem .6rem .3rem;
-      margin-left: .5rem;
-      margin-top: 1rem;
-    }
+    padding: .5rem .1rem;
   }
   th.number {
-    flex: .5;
+    flex: .4;
     color: blue;
+    padding-right: .5rem;
   }
 }
 
@@ -30,16 +27,18 @@ tbody tr {
   display: flex;
   td {
     flex: 1;
-    font-size: 1.1rem;
+    font-size: .9rem;
     border-right: $border;
+    padding: .5rem .1rem;
     img {
-      width: 60px;
-      padding-right: 10px;
+      width: 40px;
+      padding-right: 5px;
     }
   }
   td.number {
     text-align: right;
-    flex: .5;
+    flex: .4;
+    padding-right: .5rem;
   }
   td.loading {
     font-size: 2rem;
@@ -55,4 +54,21 @@ tbody tr {
 
 .blue {
   color: blue;
+}
+
+@media only screen and (min-device-width: 490px) {
+  table {
+    width: 75%;
+
+    tbody tr td {
+      font-size: 1.1rem;
+    }
+    tr th {
+      font-size: 1.1rem;
+    }
+    img {
+      width: 60px;
+      padding-right: 10px;
+    }
+  }
 }
